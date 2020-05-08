@@ -1,0 +1,12 @@
+beforeTasks:
+  image: node:12
+  command:
+    - "yarn --ignore-engines"
+
+tasks:
+  - name: app
+    image: node:12
+    command: "yarn start"
+  - name: node:12
+    image: alpine
+    command: "yarn lint"
