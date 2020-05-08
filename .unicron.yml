@@ -7,6 +7,6 @@ tasks:
   - name: app
     image: node:12
     command: "yarn start"
-  - name: node:12
-    image: alpine
+  - name: lint
+    image: node:12
     command: "yarn lint"
